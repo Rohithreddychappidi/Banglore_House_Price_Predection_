@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>House Price Predictor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏡 House Price Predictor</h1>
+
+    <label>Total Square Feet:</label>
+    <input type="number" id="sqft" placeholder="e.g., 1000" required>
+
+    <label>BHK:</label>
+    <input type="number" id="bhk" placeholder="e.g., 3" required>
+
+    <label>Bathrooms:</label>
+    <input type="number" id="bath" placeholder="e.g., 2" required>
+
+    <label>Location:</label>
+    <select id="location"></select>
+
+    <button onclick="predictPrice()">Predict Price</button>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
